@@ -8,16 +8,16 @@ document.getElementById("submit").addEventListener("click", function () {
         let roundedNumber = parseFloat(randonResult.toFixed(2));
         return roundedNumber;
     }
-    let firstPrizeChange = randomNumber(35.25, 80.26);
-    let secondPrizeChange = randomNumber(44.24, 96.25);
-    let thirdPrizeChange = randomNumber(56.45, 88.12);
-    let fourthPrizeChage = randomNumber(61.21, 98.18);
-    let fivePrizeChange = randomNumber(30.12, 70.13);
+    let firstPrizeChange = randomNumber(35.26, 122.26);
+    let secondPrizeChange = randomNumber(44.18, 112.25);
+    let thirdPrizeChange = randomNumber(56.22, 120.12);
+    let fourthPrizeChage = randomNumber(61.31, 125.18);
+   
   
    
-
-    let subtotal = firstPrizeChange + secondPrizeChange + thirdPrizeChange + fourthPrizeChage + fivePrizeChange ;
-   
+ 
+    let subtotalcount = firstPrizeChange + secondPrizeChange + thirdPrizeChange + fourthPrizeChage;
+   let subtotal = parseFloat(subtotalcount.toFixed(2))
     // var randomOrder = Math.floor(Math.random() * 999999);
    
 
@@ -33,7 +33,6 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById("secoundPrizeChange").innerText = secondPrizeChange;
     document.getElementById("thirdPrizeChange").innerText = thirdPrizeChange;
     document.getElementById("fourthPrizeChange").innerText = fourthPrizeChage;
-    document.getElementById("fivePrizeChange").innerText = fivePrizeChange;
     document.getElementById("subtotalChange").innerText = subtotal;
     document.getElementById("totalChange").innerText = subtotal;
 
